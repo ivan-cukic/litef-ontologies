@@ -40,29 +40,29 @@
 @prefix owl2:  <http://www.w3.org/2002/07/owl#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-@prefix litef: <https://raw.githubusercontent.com/ivan-cukic/litef-ontologies/master/misanu.ivan.litef.ttl#> .
+@prefix javelin: <http://ivan.fomentgroup.org/ontologies/javelin#> .
 
 # Onotlogy handling
 
-litef:Ontology
+javelin:Ontology
     a rdfs:Class ;
     rdfs:label     "Ontology" ;
     rdfs:comment   "Metadata about the ontology" ;
-    litef:isUserVisible true
+    javelin:isUserVisible true
     .
 
-litef:hasNamespace
+javelin:hasNamespace
     a rdf:Property ;
-    rdfs:domain    litef:Ontology ;
+    rdfs:domain    javelin:Ontology ;
     rdfs:range     xsd:string ;
     rdfs:label     "Ontology namespace" ;
     rdfs:comment   "Namespace for the ontology" ;
     owl2:maxCardinality 1
     .
 
-litef:hasNamespaceAbbreviation
+javelin:hasNamespaceAbbreviation
     a rdf:Property ;
-    rdfs:domain    litef:Ontology ;
+    rdfs:domain    javelin:Ontology ;
     rdfs:range     xsd:string ;
     rdfs:label     "Ontology namespace abbreviation" ;
     rdfs:comment   "Abbreviation for the ontology's namespace" ;
@@ -71,7 +71,7 @@ litef:hasNamespaceAbbreviation
 
 # Basic System
 
-litef:hasModificationTime
+javelin:hasModificationTime
     a rdf:Property ;
     rdfs:label     "Modification time" ;
     rdfs:comment   "The modification time of the subject (usually a file)" ;
@@ -79,29 +79,29 @@ litef:hasModificationTime
     rdfs:range     xsd:dateTime
     .
 
-litef:isUserVisible
+javelin:isUserVisible
     a rdf:Property ;
     rdfs:domain    rdfs:Resource ;
     rdfs:range     xsd:boolean ;
     rdfs:label     "User visible" ;
     rdfs:comment   "Should a class, resource or property be visible to the user" ;
-    litef:isUserVisible false ;
+    javelin:isUserVisible false ;
     owl2:maxCardinality 1
     .
 
 # History
 
-# litef:HistoryEvent
+# javelin:HistoryEvent
 #     a rdfs:Class ;
 #     rdfs:label     "History event" ;
 #     rdfs:comment   "Event in the history of the resource" ;
 #     .
 #
-# litef:hasHistory
+# javelin:hasHistory
 #     a rdf:Property ;
 #     rdfs:label     "has history" ;
 #     rdfs:comment   "..." ;
-#     rdfs:range     litef:HistoryEvent ;
+#     rdfs:range     javelin:HistoryEvent ;
 #     rdfs:domain    rdf:Resource
 #     .
 
