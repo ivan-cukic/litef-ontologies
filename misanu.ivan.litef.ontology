@@ -16,7 +16,7 @@
 # Ontology
 ontology.label        = Litef Ontology
 ontology.comment      = Ontology for Litef internal concepts and properties
-ontology.namespace    = https://raw.githubusercontent.com/ivan-cukic/litef-ontologies/master/misanu.ivan.litef.ttl#> .
+ontology.namespace    = https://raw.githubusercontent.com/ivan-cukic/litef-ontologies/master/misanu.ivan.litef.ttl
 ontology.abbreviation = litef
 
 # Source
