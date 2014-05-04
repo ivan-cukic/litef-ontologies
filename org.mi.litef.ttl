@@ -1,0 +1,81 @@
+#
+# Copyright (C) 2013 Ivan Cukic <ivan at mi.sanu.ac.rs>
+#
+# All rights reserved, licensed under either CC-BY or BSD.
+#
+# You are free:
+#  * to Share - to copy, distribute and transmit the work
+#  * to Remix - to adapt the work
+# Under the following conditions:
+#  * Attribution - You must attribute the work in the manner specified by the author
+#    or licensor (but not in any way that suggests that they endorse you or your use
+#    of the work).
+#
+# Redistribution and use in source and binary forms, with or without modification,
+# are permitted provided that the following conditions are met:
+#  * Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice, this
+#    list of conditions and the following disclaimer in the documentation and/or
+#    other materials provided with the distribution.
+#  * Neither the names of the authors nor the names of contributors may
+#    be used to endorse or promote products derived from this ontology without
+#    specific prior written permission.
+#
+# THIS ONTOLOGY IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+# IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+# OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+# NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS ONTOLOGY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2:  <http://www.w3.org/2002/07/owl#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+@prefix litef: <https://www.gitorious.org/litef/litef/trees/master/share/ontologies/litef#> .
+
+
+# Basic System
+
+litef:hasModificationTime
+    a rdf:Property ;
+    rdfs:label     "Modification time" ;
+    rdfs:comment   "The modification time of the subject (usually a file)" ;
+    owl2:maxCardinality 1;
+    rdfs:range     xsd:dateTime
+    .
+
+litef:isUserVisible
+    a rdf:Property ;
+    rdfs:domain    rdfs:Resource ;
+    rdfs:range     xsd:boolean ;
+    rdfs:label     "User visible" ;
+    rdfs:comment   "Should a class, resource or property be visible to the user" ;
+    litef:isUserVisible false ;
+    owl2:maxCardinality 1
+    .
+
+# History
+
+litef:HistoryEvent
+    a rdfs:Class ;
+    rdfs:label     "History event" ;
+    rdfs:comment   "Event in the history of the resource" ;
+    .
+
+litef:hasHistory
+    a rdf:Property ;
+    rdfs:label     "has history" ;
+    rdfs:comment   "..." ;
+    rdfs:range     litef:HistoryEvent ;
+    rdfs:domain    rdf:Resource
+    .
+

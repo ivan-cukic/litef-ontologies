@@ -1,0 +1,13 @@
+# Ontology
+ontology.label        = Frienf of a Friend Ontology
+ontology.comment      = This specification describes the FOAF language, defined as a dictionary of named properties and classes using W3C's RDF technology.
+ontology.namespace    = http://xmlns.com/foaf/0.1/
+ontology.abbreviation = foaf
+
+# Source
+source.filename = foaf.ttl
+source.format   = TURTLE
+
+# Code
+code.package = org.mi.litef.vocabulary
+code.object  = FOAF
