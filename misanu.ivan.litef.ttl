@@ -91,17 +91,17 @@ litef:isUserVisible
 
 # History
 
-litef:HistoryEvent
-    a rdfs:Class ;
-    rdfs:label     "History event" ;
-    rdfs:comment   "Event in the history of the resource" ;
-    .
-
-litef:hasHistory
-    a rdf:Property ;
-    rdfs:label     "has history" ;
-    rdfs:comment   "..." ;
-    rdfs:range     litef:HistoryEvent ;
-    rdfs:domain    rdf:Resource
-    .
+# litef:HistoryEvent
+#     a rdfs:Class ;
+#     rdfs:label     "History event" ;
+#     rdfs:comment   "Event in the history of the resource" ;
+#     .
+#
+# litef:hasHistory
+#     a rdf:Property ;
+#     rdfs:label     "has history" ;
+#     rdfs:comment   "..." ;
+#     rdfs:range     litef:HistoryEvent ;
+#     rdfs:domain    rdf:Resource
+#     .
 

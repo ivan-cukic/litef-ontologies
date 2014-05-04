@@ -14,15 +14,15 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 # Ontology
-ontology.label        = Litef Ontology
-ontology.comment      = Ontology for Litef internal concepts and properties
-ontology.namespace    = https://raw.githubusercontent.com/ivan-cukic/litef-ontologies/master/misanu.ivan.litef.ttl
-ontology.abbreviation = litef
+ontology.label        = Javelin Ontology
+ontology.comment      = Ontology for Javelin internal concepts and properties
+ontology.namespace    = https://raw.githubusercontent.com/ivan-cukic/litef-ontologies/master/misanu.ivan.javelin.ttl#
+ontology.abbreviation = javelin
 
 # Source
-source.filename = org.mi.litef.ttl
+source.filename = misanu.ivan.javelin.ttl
 source.format   = TURTLE
 
 # Code
-code.package = org.mi.litef.vocabulary
-code.object  = Litef
+code.package = javelin.vocabulary
+code.object  = Javelin
